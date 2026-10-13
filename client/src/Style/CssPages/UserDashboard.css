@@ -1,0 +1,86 @@
+.user-dashboard {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-color: #ffecec;
+  color: #e74c3c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  direction: rtl;
+}
+
+/* Header */
+.user-header {
+  width: 100%;
+  background-color: #e74c3c;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.user-header h2 {
+  margin: 0;
+}
+
+/* Title */
+.user-title {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.user-title h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.user-title p {
+  font-size: 20px;
+}
+
+/* Buttons */
+.user-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+/* Footer */
+.user-footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #e74c3c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* מיכל ייעודי לכפתור הקריטי כדי שיתפרס על כל הרוחב */
+.critical-button-container {
+  width: 100%;
+}
+
+/* עיצוב ספציפי לכפתור החיפוש הקריטי */
+.critical-btn {
+  width: 100% !important; /* מבטיח תפיסת רוחב מלאה */
+  background-color: #ff7878 !important; /* צבע כהה יותר (שני את לצבע הבסיס שלך) */
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 1.2rem !important; /* הגדלה קלה לנוכחות */
+  padding: 15px !important; /* הפיכתו ליותר גדול ונגיש */
+}
+
+/* רשת לשאר הכפתורים הרגילים (למשל 2 בשורה, או משתנה) */
+.standard-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* מציג אותם בזוגות */
+  gap: 10px;
+}

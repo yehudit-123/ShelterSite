@@ -1,0 +1,76 @@
+.requests-page {
+  direction: rtl;
+  min-height: 100vh;
+  background-color: #ffecec;
+  padding: 30px;
+}
+
+.requests-top-bar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.requests-title {
+  text-align: center;
+  color: #e74c3c;
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+.loading-text {
+  text-align: center;
+  color: #666;
+  font-size: 20px;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.request-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+.request-card:hover {
+  transform: translateY(-2px);
+}
+
+.request-details {
+  width: 100%;
+}
+
+.request-details h3 {
+  color: #e74c3c;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.request-details p {
+  margin: 8px 0;
+}
+
+.request-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.request-actions button {
+  width: 110px;
+  height: 40px;
+  font-size: 14px;
+}

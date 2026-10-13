@@ -1,0 +1,77 @@
+html, body, #root {
+  height: 100%;
+}
+.admin-dashboard {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-color: #ffecec;
+  color: #e74c3c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  direction: rtl;
+}
+
+.admin-header {
+  width: 100%;
+  background-color: #e74c3c;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.admin-header h2 {
+  margin: 0;
+}
+
+.admin-title {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.admin-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.dashboard-btn {
+  width: 220px;
+  height: 90px;
+}
+
+.dashboard-btn button {
+  width: 100%;
+  height: 100%;
+}
+
+.logout-btn button {
+  background-color: white;
+  color: #e74c3c;
+  border: 2px solid white;
+}
+
+.admin-footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #e74c3c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.admin-content {
+  flex: 1;
+  height: 100%;
+}
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

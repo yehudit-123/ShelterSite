@@ -1,0 +1,120 @@
+/* MapShelters.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.map-page-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map-view {
+  flex: 1;
+  min-width: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.sidebar {
+  width: 350px;
+  background-color: #ffecec;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+/* כפתור חזרה חדש */
+.back-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: right;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #555;
+}
+
+.sidebar-title {
+  color: #e74c3c;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 10px;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.shelter-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.shelter-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.shelter-card.selected {
+  border: 2px solid #e74c3c;
+  background-color: #fffaf9;
+}
+
+.shelter-name {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.shelter-address {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.shelter-distance {
+  margin: 5px 0 0 0;
+  font-weight: bold;
+  color: #e74c3c;
+  font-size: 14px;
+}
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.map-view > div {
+  height: 100% !important;
+}
+.details-btn{
+  margin: 5px 0 0 0;
+  font-weight: bold;
+  color: #e74c3c;
+  font-size: 14px;
+  border: 2px solid #e74c3c;
+  background-color: #fffaf9;
+  border-radius: 8ch;
+}

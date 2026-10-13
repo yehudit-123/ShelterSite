@@ -1,0 +1,306 @@
+/* --- כללי --- */
+.back {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* --- קונטיינרים --- */
+.contact-container,
+.admin-messages-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.1);
+  direction: rtl;
+}
+
+.contact-title {
+  font-size: 28px;
+  color: #e74c3c;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* --- טופס צור קשר --- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #f5c6c6;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #fff8f8;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #e74c3c;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.25);
+}
+
+.contact-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-button {
+  padding: 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-button:hover {
+  background-color: #c0392b;
+}
+
+/* --- טאבים --- */
+.messages-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.5rem auto 0;
+  max-width: 700px;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #e74c3c;
+  border-radius: 8px;
+  background: white;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  transition: all 0.2s;
+}
+
+.tab-btn.active {
+  background: #e74c3c;
+  color: white;
+}
+
+/* --- רשימת הודעות --- */
+.no-messages {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.message-card {
+  border: 1px solid #f5c6c6;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff8f8;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-bottom: 1px solid #f5c6c6;
+  padding-bottom: 10px;
+}
+
+.message-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #c0392b;
+}
+
+.message-body {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+/* --- Badges --- */
+.user-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.user-badge.מזוהה {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.user-badge.אנונימי {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.anonymous-sender {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* --- אזור תגובה --- */
+.reply-section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reply-textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #f5c6c6;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  resize: none;
+  transition: all 0.3s ease;
+}
+
+.reply-textarea:focus {
+  border-color: #e74c3c;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.2);
+}
+
+.reply-button {
+  align-self: flex-end;
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reply-button:hover {
+  background-color: #c0392b;
+}
+
+/* --- תגובה שנשלחה --- */
+.admin-response {
+  background-color: #fff0f0;
+  border-right: 3px solid #e74c3c;
+  border-radius: 0 6px 6px 0;
+  padding: 12px 14px;
+}
+
+.admin-response strong {
+  font-size: 13px;
+  color: #c0392b;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.admin-response p {
+  margin: 0;
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* --- אימייל עם העתקה --- */
+.copyable-email-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.copyable-email-wrapper:hover {
+  background-color: #ffecec;
+}
+
+.copyable-email-wrapper:hover .email-text {
+  text-decoration: underline;
+  color: #e74c3c;
+}
+
+.email-text {
+  font-size: 14px;
+  color: #3c4043;
+  transition: all 0.2s ease;
+}
+
+.copy-icon-css {
+  width: 12px;
+  height: 14px;
+  border: 1.5px solid #e74c3c;
+  border-radius: 2px;
+  position: relative;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.copy-icon-css::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  border: 1.5px solid #e74c3c;
+  border-radius: 2px;
+  top: -4px;
+  right: -4px;
+  background-color: white;
+}
+
+.copyable-email-wrapper:hover .copy-icon-css {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* --- סטטוס --- */
+.status-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  opacity: 0.75;
+}

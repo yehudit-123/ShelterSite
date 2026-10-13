@@ -1,0 +1,46 @@
+.emergency-container {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #ffecec;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .emergency-box {
+    max-width: 800px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid #e74c3c;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .emergency-title {
+    text-align: center;
+    color: #e74c3c;
+    margin-bottom: 30px;
+  }
+  
+  .emergency-subtitle {
+    color: #e74c3c;
+    margin-top: 20px;
+  }
+  
+  .emergency-text {
+    line-height: 1.6;
+  }
+  
+  .emergency-list {
+    padding-right: 20px;
+  }
+  
+  .emergency-highlight {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ffe5e5;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #c0392b;
+  }

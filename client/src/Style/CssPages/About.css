@@ -1,0 +1,33 @@
+.about-container {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #ffecec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .about-box {
+    max-width: 700px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid #e74c3c;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .about-title {
+    color: #e74c3c;
+  }
+  
+  .about-text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .about-subtext {
+    font-size: 16px;
+    margin-top: 20px;
+  }
